@@ -1,5 +1,43 @@
 body {
     margin: 0;
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(32, 32, 32);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.color-pick {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+input[type='color'] {
+    width: 100px;
+    height: 100px;
+    background: white 0% 0%;
+    box-shadow: 0px 3px 6px black;
+    transform: scale(1.5);
+}
+
+
+.etch-display{
+    display: flex;
+    background-color: rgb(111, 111, 207);
+    justify-content: space-evenly;
+}
+
+.options {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    
+    
 }
 
 .container {
@@ -8,11 +46,13 @@ body {
     width: 480px;
     height: 480px;
     border: solid black 2px;
+    margin-left: 50px;
+    background-color: white;
 }
 
 .row {
     display: flex;
-    flex: 1;
+    flex: .5 1 auto;
 }
 
 .etch-box {
